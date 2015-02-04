@@ -27,7 +27,7 @@ Before using this plugin, you must ensure that you have a usable instance of `ju
 2. Input the following:
    ```
    Pkg.update()
-   Pkg.add(Lint)
+   Pkg.add("Lint")
    ```
 
 ### Linter configuration
