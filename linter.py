@@ -11,16 +11,13 @@
 """This module exports the Julialint plugin class."""
 
 from SublimeLinter.lint import Linter, util
-from os.path import dirname, realpath
-# import sublime
-
 
 class Julialint(Linter):
 
     """Provides an interface to julialint."""
 
     syntax = 'julia'
-    executable = 'julia'
+    cmd = ['julia', '-e', 'using Lint; lintfile(ARGS[1])']
     regex = r'(?P<file>^.*\.jl):(?P<line>\d{1,4}) \[(?P<func>.*)\] ((?P<error>ERROR)|(?P<warning>WARN)) (?P<message>.*)'
     multiline = False
     line_col_base = (1, 1)
@@ -33,12 +30,3 @@ class Julialint(Linter):
     inline_settings = None
     inline_overrides = None
     comment_re = None
-
-    def cmd(self):
-        """Return a list with the command line to execute."""
-
-        command = 'using Lint; lintfile(ARGS[1])'
-        print([self.executable_path, '-e', command])
-        return ['julia',
-                '-e',
-                command]

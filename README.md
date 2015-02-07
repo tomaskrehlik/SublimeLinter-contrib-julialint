@@ -34,12 +34,12 @@ Before using this plugin, you must ensure that you have a usable instance of `ju
 
 To make it working you need to specify path to your executable of `Julia` and edit the script within the package content. Do the following:
 
-1. Go to `Sublime Text -> Preferences -> Browse packages...`
+1. Go to `Sublime Text -> Preferences -> Package Settings -> SublimeLinter -> Settings User`
 
-2. Navigate to the `SublimeLinter-contrib-julialint`. Depending on your platform you will edit either `osx.sh`, `linux.sh`, or `windows.bat`. The typical paths look as follows
-    - **OS X**: `/Applications/Julia-0.3.5.app/Contents/Resources/julia/bin/julia` if you have the binaries (the number changes based on the version), or just `julia` if you have it exported to your path.
-    - **Linux**: `julia`, most probably it will be exported to your PATH.
-    - **Windows**: you should locate julia.exe
+2. Add to paths variable path to your executable of julia:
+    - **OS X**: Something like "osx": ["/Applications/julia-0.3.5.app/Contents/Resources/julia/bin"] if you have the binaries (the number changes based on the version) or if you have installed manually you should be able to figure out what path to add.
+    - **Linux**: if anyone has an example let me know to include it here.
+    - **Windows**: you should locate julia.exe .
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
