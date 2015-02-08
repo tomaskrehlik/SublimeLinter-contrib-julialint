@@ -9,16 +9,18 @@
 #
 
 """This module exports the Julialint plugin class."""
+# import subprocess
+from os.path import dirname, realpath
 
 from SublimeLinter.lint import Linter, util
 
 class Julialint(Linter):
-
+    
     """Provides an interface to julialint."""
 
     syntax = 'julia'
-    cmd = ['julia', '-e', 'using Lint; lintfile(ARGS[1])']
-    regex = r'(?P<file>^.*\.jl):(?P<line>\d{1,4}) \[(?P<func>.*)\] ((?P<error>ERROR)|(?P<warning>WARN)) (?P<message>.*)'
+    cmd = cmd = "\"" + dirname(realpath(__file__)) + '/test.sh\"'
+    regex = r'(?P<file>^.*\.jl):(?P<line>\d{1,4}) \[(?P<func>.*)\] ((?P<error>(ERROR|FATAL))|(?P<warning>WARN)) (?P<message>.*)'
     multiline = False
     line_col_base = (1, 1)
     tempfile_suffix = "jl"
