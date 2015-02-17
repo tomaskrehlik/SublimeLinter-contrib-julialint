@@ -3,15 +3,6 @@
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-julialint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-julialint)
 
-## Temporary
-
-Because this is still a development version, the repository is not in package control and you have to manually add this repository. To do that:
-
-- Open command palette (`Cmd + Shift + P` on Mac)
-- Search for Add repository.
-- Paste URL of this page.
-- Now you can install the package.
-
 ## About
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [julialint](https://github.com/tonyhffong/Lint.jl). It will be used with files that have the “julia” syntax. Currently, it takes some time until it lints, because of the start-up time of the linter, but it should improve with time independently of this linter.
