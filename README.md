@@ -1,7 +1,7 @@
  SublimeLinter-contrib-julialint
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-julialint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-julialint)
+[![Build Status](https://travis-ci.org/tomaskrehlik/SublimeLinter-contrib-julialint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-julialint)
 
 ## About
 
