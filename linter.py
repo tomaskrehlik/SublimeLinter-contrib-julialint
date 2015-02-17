@@ -19,7 +19,7 @@ class Julialint(Linter):
 
     syntax = 'julia'
     cmd = ['julia', '-e', 'using Lint; lintfile(ARGS[1])']
-    regex = r'(?P<file>^.*\.jl):(?P<line>\d{1,4}) \[(?P<func>.*)\] ((?P<error>ERROR)|(?P<warning>WARN)) (?P<message>.*)'
+    regex = r'(^.*\.jl):(?P<line>\d{1,4}) \[(?P<func>.*)\] ((?P<error>ERROR)|(?P<warning>WARN)) (?P<message>.*)'
     multiline = False
     line_col_base = (1, 1)
     tempfile_suffix = "jl"
