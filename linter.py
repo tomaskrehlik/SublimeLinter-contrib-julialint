@@ -26,7 +26,6 @@ class Julialint(Linter):
     error_stream = util.STREAM_BOTH
     selectors = {}
     word_re = None
-    comment_re = r'#'
     defaults = {}
     inline_settings = None
     inline_overrides = None
