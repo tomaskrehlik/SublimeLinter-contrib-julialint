@@ -29,7 +29,7 @@ To make it working you need to specify path to your executable of `Julia` and ed
 
 2. Add to paths variable path to your executable of julia:
     - **OS X**: Something like "osx": ["/Applications/julia-0.3.5.app/Contents/Resources/julia/bin"] if you have the binaries (the number changes based on the version) or if you have installed manually you should be able to figure out what path to add.
-    - **Linux**: if anyone has an example let me know to include it here.
+    - **Linux**: You can find your Julia install with `which julia`. Some Julia installs can be found at `/usr/bin/julia`.
     - **Windows**: you should locate julia.exe .
 
 ### Plugin installation
