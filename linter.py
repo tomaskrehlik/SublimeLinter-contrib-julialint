@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter, util
 
 
 class Julialint(Linter):
-
     """Provides an interface to julialint."""
 
     syntax = 'julia'
